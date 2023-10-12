@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: 	#ccba7c;
 }
 ul {
     margin: 0;
@@ -24,7 +23,6 @@ a {
     align-items: center;
 }
 .logo {
-    font-size: 24px;
     color: #0c0f12;
     font-weight: 900;
 }
@@ -32,8 +30,37 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 24px;  
 }
 .header-links li:hover {
     background-color: #b87e27;
 }
+.logo img {
+    height: 56px;
+}
+.section1 {
+    background-color: #ccba7c;
+    padding: 48px 10%;    
+    display: flex;
+    justify-content: center;
+}
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 50%;
+    max-width: 50%;
+}   
+.content-left {
+    flex: 1 1 50%;
+    padding-right: 32px;
+}
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #413a27;
+}
+.hero-secondary {
+    font-size: 18px;
+    color: #413a27;
+}  
