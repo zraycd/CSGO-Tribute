@@ -38,7 +38,7 @@ a {
 .logo img {
     height: 56px;
 }
-.section1 {
+#section1 {
     background-color: #ccba7c;
     padding: 48px 10%;    
     display: flex;
@@ -64,7 +64,7 @@ a {
     font-size: 18px;
     color: #413a27;
 }  
-.section2 {
+#section2 {
     padding: 48px 5%;
     background-color: #efead7;
 }
@@ -109,5 +109,34 @@ a {
 }
 .s2-bottom {
     font-size: 24px;
+    text-align: center;
+}
+.information-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1F2937;
+}
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20%;
+    padding-bottom: 64px;
+}
+.s3-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box {
+    border: 5px solid #de9b35;
+    border-radius: 16px;
+    width: 256px;
+    height: 256px;
+    flex: 1 1 auto;
+}
+.s3-container {
+    margin: 32px;
     text-align: center;
 }
