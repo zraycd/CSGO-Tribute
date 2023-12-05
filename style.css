@@ -135,8 +135,54 @@ a {
     width: 256px;
     height: 256px;
     flex: 1 1 auto;
+    object-fit: cover;
+}
+.popupLink {
+    width: 100%;
+    height: 100%;
 }
 .s3-container {
     margin: 32px;
+    text-align: center;
+}
+@keyframes popup {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation-name: popup;
+    animation-duration: 0.5s;
+}
+.popup:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popupContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popupContent iframe {
+    width: 50vw;
+    height: 500px;
+    max-width: 50%;
+}
+.popupText {
+    padding: 36px 0px;
+    color: #efead7;
+    font-size: 36px;
+    font-weight: bolder;
+    max-width: 50%;
     text-align: center;
 }
