@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const iframe = document.createElement('iframe')
 const text = document.createElement('div')
 
