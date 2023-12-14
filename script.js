@@ -48,42 +48,6 @@ linkContainer.addEventListener('click', (event) => {
 
     }
 })
-
-// document.querySelector('#link1').addEventListener('click', () => {
-//     popup1.appendChild(iframe)
-//     iframe.src = "https://www.youtube.com/embed/DqB95s47f1w?si=zMqAyDszoToOjVdy"
-//     iframe.allowFullscreen = true
-//     popup1.appendChild(text)
-//     text.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione quisquam dignissimos. Tempora itaque in deleniti, quos iusto officia ipsa maiores modi corrupti, dolorum tenetur obcaecati sunt eaque omnis veniam!"
-//     text.classList.add('popupText')
-
-//     console.log('clicked')
-// });
-// document.querySelector('#link2').addEventListener('click', () => {
-//     popup2.appendChild(iframe)
-//     iframe.src = "https://www.youtube.com/embed/OaFk8XkgZik?si=AIO-JdGYaGeUucnP"
-//     iframe.allowFullscreen = true
-//     popup2.appendChild(text)
-//     text.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione quisquam dignissimos. Tempora itaque in deleniti, quos iusto officia ipsa maiores modi corrupti, dolorum tenetur obcaecati sunt eaque omnis veniam!"
-//     text.classList.add('popupText')
-// });
-// document.querySelector('#link3').addEventListener('click', () => {
-//     popup3.appendChild(iframe)
-//     iframe.src = "https://www.youtube.com/embed/DF20qyZVpss?si=oxSD6Ldd2dtyeAcn"
-//     iframe.allowFullscreen = true
-//     popup3.appendChild(text)
-//     text.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione quisquam dignissimos. Tempora itaque in deleniti, quos iusto officia ipsa maiores modi corrupti, dolorum tenetur obcaecati sunt eaque omnis veniam!"
-//     text.classList.add('popupText')
-// });
-// document.querySelector('#link4').addEventListener('click', () => {
-//     popup4.appendChild(iframe)
-//     iframe.src = "https://www.youtube.com/embed/163sJtJecZI?si=i3eB5gvmqtkXNZ0W"
-//     iframe.allowFullscreen = true
-//     popup4.appendChild(text)
-//     text.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione quisquam dignissimos. Tempora itaque in deleniti, quos iusto officia ipsa maiores modi corrupti, dolorum tenetur obcaecati sunt eaque omnis veniam!"
-//     text.classList.add('popupText')
-// });
-
 document.querySelector('#popup1').addEventListener('click', () => {
     popup1.removeChild(iframe)
 });
