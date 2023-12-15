@@ -26,6 +26,10 @@ a {
     height: 100%;
     width: 100%;
 }
+@keyframes slide {
+    from {top:-50px;opacity: 0;}
+    to {top:0px;opacity: 1;}
+}
 .glow {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
@@ -65,6 +69,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    top: 0;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 0.75s;
 }
 .hero-main {
     font-size: 48px;
