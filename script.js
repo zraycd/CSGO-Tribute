@@ -60,3 +60,60 @@ document.querySelector('#popup3').addEventListener('click', () => {
 document.querySelector('#popup4').addEventListener('click', () => {
     popup4.removeChild(iframe)
 });
+
+
+document.querySelector('#mapsContainer').addEventListener('click', (event) => {
+    switch (event.target.id) {
+        case 'mirage':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/mirage.jpg') no-repeat center center fixed`;
+            });
+            break;
+        case 'dust2':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/dust2.jpg') no-repeat center center fixed`;
+            });
+            break;
+        case 'inferno':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/inferno.png') no-repeat center center fixed`;
+            });
+            break;
+        case 'vertigo':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/vertigo.webp') no-repeat center center fixed`;
+            });
+            break;
+        case 'overpass':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/overpass.jpg') no-repeat center center fixed`;
+            });
+            break;
+        case 'nuke':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/nuke.jpg') no-repeat center center fixed`;
+            });
+            break;
+        case 'ancient':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/ancient.webp') no-repeat center center fixed`;
+            });
+            break;
+        case 'anubis':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/anubis.jpg') no-repeat center center fixed`;
+                element.style.backgroundSize = `cover`
+            });
+            break;
+        case 'train':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/train.webp') no-repeat center center fixed`;
+            });
+            break;
+        case 'cache':
+            document.querySelectorAll('.background').forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/cache.jpg') no-repeat center center fixed`;
+            });
+            break;
+    }
+});

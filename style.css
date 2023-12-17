@@ -6,9 +6,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-.header, #section1, footer {
+.background {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
-    url('https://i.pinimg.com/originals/72/e0/e3/72e0e3457c9640e60f16d82b54cea3a6.jpg') no-repeat center center fixed;
+    url('images/mirage.jpg') no-repeat center center fixed;
 }
 ul {
     margin: 0;
@@ -97,7 +97,7 @@ a {
     font-size: 48px;
     font-weight: 900;
 }
-.mapsContainer {
+#mapsContainer {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -127,10 +127,13 @@ a {
     max-width: fit-content;
     padding: 15px;
     border-radius: 15px;
+    cursor: pointer;
+}
+.mapHover label {
+    cursor: pointer;
 }
 .mapHover:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    cursor: pointer;
 }
 .information-header {
     font-size: 36px;
