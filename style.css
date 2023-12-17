@@ -85,7 +85,7 @@ a {
 }  
 #section2 {
     padding-bottom: 5%;
-    background-color: #633408;
+    background-color: #3c3936;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,15 +108,29 @@ a {
     height: 60px;
     width: 60px;
     object-fit: cover;
-    border: 3px solid orange;
+    border: 3px solid #c3c6c9;
     border-radius: 5px;
 }
 .map {
     height: 90px;
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapHover {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    max-width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+}
+.mapHover:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 .information-header {
     font-size: 36px;
