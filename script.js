@@ -63,6 +63,11 @@ document.querySelector('#popup4').addEventListener('click', () => {
 
 
 document.querySelector('#mapsContainer').addEventListener('click', (event) => {
+    document.querySelectorAll('.map').forEach(map => {
+        if (map.id !== event.target.id) {
+            map.style.display = 'none'
+        }
+    })
     switch (event.target.id) {
         case 'mirage':
             document.querySelectorAll('.background').forEach(element => {
