@@ -13,6 +13,11 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
     url('images/mirage.jpg') no-repeat center center fixed;
 }
+.animeBackground {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed,
+    url('images/dust2Anime.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -54,7 +59,7 @@ a {
 .header img {
     height: 64px;
 }
-#section1 {
+#about {
     height: 100vh;
     width: 100vw;
     padding: 48px 10%;    
@@ -86,8 +91,10 @@ a {
     font-size: 18px;
     color: white;
 } 
-#section2 {
-    padding-bottom: 5%;
+#mapSection {
+    scroll-margin-top: 150px;
+    padding-bottom: 7%;
+    padding-top: 3%;
     background-color: #3c3936;
     display: flex;
     flex-direction: column;
@@ -96,7 +103,7 @@ a {
     gap: 24px;
     color: white;
 }
-#section2 h1 {
+#mapSection h1 {
     font-size: 48px;
     font-weight: 900;
 }
@@ -143,12 +150,65 @@ a {
     grid-column: span 4;
     grid-row: span 2;
 }
+#gameplay {
+    padding: 48px 5%;
+    color: white;
+}
+.s3-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.s3-header {
+    padding-bottom: 48px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.s3-content {
+    font-size: 24px;
+}
+.s3-middle {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 12px 0px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+.s3-left {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+}
+.s3-right {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 50%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+}
+.s3-bottom {
+    font-size: 24px;
+    text-align: center;
+}
 .information-header {
+    color: white;
     font-size: 36px;
     font-weight: bolder;
-    color:#1F2937;
+    padding: 24px;
 }
-#section3 {
+#clips {
+    background-color: #3c3936;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;

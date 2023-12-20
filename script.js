@@ -60,7 +60,7 @@ document.querySelector('#popup3').addEventListener('click', () => {
 document.querySelector('#popup4').addEventListener('click', () => {
     popup4.removeChild(iframe)
 });
-
+const animeBackground = document.querySelectorAll('.animeBackground')
 let timesClicked = 0
 document.querySelector('#mapsContainer').addEventListener('click', (event) => {
     timesClicked += 1
@@ -84,33 +84,43 @@ document.querySelector('#mapsContainer').addEventListener('click', (event) => {
             mapInfo.style.display = 'none'
         })
         timesClicked += -2
-    }
-
+    } 
     switch (event.target.id) {
         case 'mirage':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/mirage.jpg') no-repeat center center fixed`;
             });
+            animeBackground.forEach(element => {
+                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/mirageAnime.jpg') no-repeat center center fixed;`
+            })
             break;
         case 'dust2':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/dust2.jpg') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/dust2Anime.jpg') no-repeat center center fixed;`
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'inferno':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/inferno.png') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/infernoAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'vertigo':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/vertigo.webp') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/vertigoAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'overpass':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/overpass.jpg') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/overpassAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'nuke':
             document.querySelectorAll('.background').forEach(element => {
