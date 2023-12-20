@@ -6,6 +6,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+.hidden {
+    display: none;
+}
 .background {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
     url('images/mirage.jpg') no-repeat center center fixed;
@@ -134,6 +137,11 @@ a {
 }
 .mapHover:hover {
     background-color: rgba(0, 0, 0, 0.4);
+}
+.mapInfo {
+    font-size: 20pt;
+    grid-column: span 4;
+    grid-row: span 2;
 }
 .information-header {
     font-size: 36px;

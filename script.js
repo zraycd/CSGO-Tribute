@@ -68,11 +68,20 @@ document.querySelector('#mapsContainer').addEventListener('click', (event) => {
         document.querySelectorAll('.map').forEach(map => {
             if (map.id !== event.target.id) {
                 map.style.display = 'none'
+            } else {
+                document.querySelectorAll('.hidden').forEach(mapInfo => {
+                    if (map.id === mapInfo.id) {
+                        mapInfo.style.display = 'flex'
+                    }
+                })
             }
         })
     } else {
         document.querySelectorAll('.map').forEach(map => {
             map.style.display = 'flex'
+        })
+        document.querySelectorAll('.hidden').forEach(mapInfo => {
+            mapInfo.style.display = 'none'
         })
         timesClicked += -2
     }
