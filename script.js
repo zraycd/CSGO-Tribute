@@ -61,13 +61,22 @@ document.querySelector('#popup4').addEventListener('click', () => {
     popup4.removeChild(iframe)
 });
 
-
+let timesClicked = 0
 document.querySelector('#mapsContainer').addEventListener('click', (event) => {
-    document.querySelectorAll('.map').forEach(map => {
-        if (map.id !== event.target.id) {
-            map.style.display = 'none'
-        }
-    })
+    timesClicked += 1
+    if (timesClicked === 1) {
+        document.querySelectorAll('.map').forEach(map => {
+            if (map.id !== event.target.id) {
+                map.style.display = 'none'
+            }
+        })
+    } else {
+        document.querySelectorAll('.map').forEach(map => {
+            map.style.display = 'flex'
+        })
+        timesClicked += -2
+    }
+
     switch (event.target.id) {
         case 'mirage':
             document.querySelectorAll('.background').forEach(element => {
