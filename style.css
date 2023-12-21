@@ -15,7 +15,7 @@ body {
 }
 .animeBackground {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed,
-    url('images/dust2Anime.jpg') no-repeat center center fixed;
+    url('images/mirageAnime.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 ul {

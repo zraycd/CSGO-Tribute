@@ -60,7 +60,7 @@ document.querySelector('#popup3').addEventListener('click', () => {
 document.querySelector('#popup4').addEventListener('click', () => {
     popup4.removeChild(iframe)
 });
-const animeBackground = document.querySelectorAll('.animeBackground')
+const animeBackground = document.querySelector('.animeBackground')
 let timesClicked = 0
 document.querySelector('#mapsContainer').addEventListener('click', (event) => {
     timesClicked += 1
@@ -90,63 +90,72 @@ document.querySelector('#mapsContainer').addEventListener('click', (event) => {
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/mirage.jpg') no-repeat center center fixed`;
             });
-            animeBackground.forEach(element => {
-                element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/mirageAnime.jpg') no-repeat center center fixed;`
-            })
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/mirageAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'dust2':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/dust2.jpg') no-repeat center center fixed`;
             });
-            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/dust2Anime.jpg') no-repeat center center fixed;`
-            animeBackground.style.backgroundSize = `cover`
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/dust2Anime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`;
             break;
         case 'inferno':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/inferno.png') no-repeat center center fixed`;
             });
-            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/infernoAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/infernoAnime.jpg') no-repeat center center fixed`;
             animeBackground.style.backgroundSize = `cover`
             break;
         case 'vertigo':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/vertigo.webp') no-repeat center center fixed`;
             });
-            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/vertigoAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/vertigoAnime.jpg') no-repeat center center fixed`;
             animeBackground.style.backgroundSize = `cover`
             break;
         case 'overpass':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/overpass.jpg') no-repeat center center fixed`;
             });
-            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/overpassAnime.jpg') no-repeat center center fixed;`
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/overpassAnime.jpg') no-repeat center center fixed`;
             animeBackground.style.backgroundSize = `cover`
             break;
         case 'nuke':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/nuke.jpg') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/nukeAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'ancient':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/ancient.webp') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/ancientAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'anubis':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/anubis.jpg') no-repeat center center fixed`;
                 element.style.backgroundSize = `cover`
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/anubisAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'train':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/train.webp') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/trainAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
         case 'cache':
             document.querySelectorAll('.background').forEach(element => {
                 element.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, url('images/cache.jpg') no-repeat center center fixed`;
             });
+            animeBackground.style.background = `linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) no-repeat fixed, url('images/cacheAnime.jpg') no-repeat center center fixed`;
+            animeBackground.style.backgroundSize = `cover`
             break;
     }
 });
