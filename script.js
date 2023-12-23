@@ -26,7 +26,7 @@ linkContainer.addEventListener('click', (event) => {
             iframe.src = "https://www.youtube.com/embed/OaFk8XkgZik?si=AIO-JdGYaGeUucnP"
             iframe.allowFullscreen = true
             popup2.appendChild(text)
-            text.textContent = `Xyp9x's 1v5 ninja defuse is etched in CS:GO lore as one of the most astonishing plays in competitive gaming. At the ELEAGUE Major in 2017, Astralis' clutch specialist Andreas "Xyp9x" Højsleth managed an improbable ninja defuse against FaZe Clan. Alone against all odds, Xyp9x patiently defused the bomb amidst the chaos, leaving the CS:GO community in awe of his composure and tactical brilliance.`
+            text.textContent = `Tense1983's "GREEN GREEN what is your problem" is a humorous and iconic CS:GO moment originating from a match where a player, nicknamed Tense1983, vented his frustration at his teammate over the in-game voice chat. The exasperated line, delivered in a thick accent, gained notoriety within the CS:GO community and has since become a lighthearted symbol of the occasional frustrations and comedic moments that unfold in online multiplayer gaming.`
             text.classList.add('popupText')
             break;
         case 'link3':
@@ -34,7 +34,7 @@ linkContainer.addEventListener('click', (event) => {
             iframe.src = "https://www.youtube.com/embed/DF20qyZVpss?si=oxSD6Ldd2dtyeAcn"
             iframe.allowFullscreen = true
             popup3.appendChild(text)
-            text.textContent = `Tense1983's "GREEN GREEN what is your problem" is a humorous and iconic CS:GO moment originating from a match where a player, nicknamed Tense1983, vented his frustration at his teammate over the in-game voice chat. The exasperated line, delivered in a thick accent, gained notoriety within the CS:GO community and has since become a lighthearted symbol of the occasional frustrations and comedic moments that unfold in online multiplayer gaming.`
+            text.textContent = `Xyp9x's 1v5 ninja defuse is etched in CS:GO lore as one of the most astonishing plays in competitive gaming. At the ELEAGUE Major in 2017, Astralis' clutch specialist Andreas "Xyp9x" Højsleth managed an improbable ninja defuse against FaZe Clan. Alone against all odds, Xyp9x patiently defused the bomb amidst the chaos, leaving the CS:GO community in awe of his composure and tactical brilliance.`
             text.classList.add('popupText')
             break;
         case 'link4':
@@ -42,8 +42,7 @@ linkContainer.addEventListener('click', (event) => {
             iframe.src = "https://www.youtube.com/embed/163sJtJecZI?si=i3eB5gvmqtkXNZ0W"
             iframe.allowFullscreen = true
             popup4.appendChild(text)
-            text.textContent = `
-            XQC, a popular Twitch streamer and content creator, experienced a memorable and humorous moment in CS:GO often referred to as his "worst round in CSGO history." In this unforgettable incident, XQC unintentionally wreaked havoc on his teammate during a crucial round. As the tension mounted, XQC's attempt to assist his teammate with a molotov backfired when he accidentally tossed the incendiary grenade directly onto his teammate. To compound the chaos, he followed up with a mistimed flashbang that disoriented and ultimately led to the inadvertent demise of his bewildered teammate. The comical sequence of events became a viral sensation, showcasing the unpredictability and comedic side of online gaming, with XQC's teammate left in utter confusion and amusement at the unexpected turn of events.`
+            text.textContent = `XQC, a popular Twitch streamer and content creator, experienced a memorable and humorous moment in CS:GO often referred to as his "worst round in CSGO history". XQC's attempt to assist his teammate with a molotov backfired when he accidentally tossed the incendiary grenade directly onto his teammate. To compound the chaos, he followed up with a mistimed flashbang that disoriented and ultimately led to the inadvertent demise of his bewildered teammate. The comical sequence of events became a viral sensation, showcasing the unpredictability and comedic side of online gaming, with XQC's teammate left in utter confusion and amusement at the unexpected turn of events.`
             text.classList.add('popupText')
             break;
 
